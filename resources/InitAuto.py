@@ -47,7 +47,7 @@ GMAIL_TARGET = (
     "Gmail_ConsultaJudicial"  # Nombre clave en el Administrador de Credenciales
 )
 GMAIL_USUARIO = "jonathandevrpa@gmail.com"  # Tu cuenta Gmail
-GMAIL_PASSWORD = "kigo wmub ndpk qwmj"  # App Password de Google (16 caracteres)
+GMAIL_PASSWORD = ""  # Ingresar la contraseña de aplicacion de gmail
 
 
 # ─────────────────────────────────────────────
