@@ -265,6 +265,10 @@ C:\roc_studio\Rocketbot\modules\
 
   <img width="1365" height="603" alt="image" src="https://github.com/user-attachments/assets/408fdb8c-3568-4c15-a01b-5ed8838e5ffa" />
 
+Logs Estructurado 
+
+<img width="1138" height="434" alt="image" src="https://github.com/user-attachments/assets/4780b411-9159-4094-bed2-0e74781e200d" />
+
 ### Paso 6 — Limpiar el ambiente (opcional)
 
 Para eliminar las credenciales y variables globales configuradas por el script de inicialización, ejecute:
