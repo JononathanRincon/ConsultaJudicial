@@ -123,6 +123,7 @@ Main_ConsultaJudicial (Orquestador)
 ├── HU02_Busqueda_RamaJudicial
 └── HU03_Notificacion_Cierre
 ```
+<img width="874" height="604" alt="image" src="https://github.com/user-attachments/assets/eba694e0-dacf-4fc8-abca-34c484e928be" />
 
 ### Estructura de base de datos
 
@@ -138,7 +139,7 @@ B01_ConsultaJudicial_Transacciones (
     id, strNombreConsultar, strRadicado, strRutaDocumento,
     Status, ProcessDate, Notes, CorrelationId, UrlWeb
 )
--- Status: Pending | Processed | Business_Exception | System_Exception
+-- Status: Pendiente | Procesado | Excepcion negocio | Error Sistema
 ```
 
 ---
@@ -226,6 +227,8 @@ Copie **todos los módulos** que se encuentran en:
 ```
 C:\Main_ConsultaJudicial\modules\
 ```
+<img width="270" height="236" alt="image" src="https://github.com/user-attachments/assets/4ccb12cd-225f-4339-bccb-868d21644246" />
+
 Hacia la carpeta de módulos de Rocketbot:
 ```
 C:\roc_studio\Rocketbot\modules\
@@ -239,13 +242,28 @@ C:\roc_studio\Rocketbot\modules\
    ```
    C:\roc_studio\Rocketbot\rocketbot.exe
    ```
-2. En la pantalla principal, haga clic en el botón **Importar**.
+   <img width="938" height="710" alt="image" src="https://github.com/user-attachments/assets/b3cbfd98-f3d5-46a7-a9c1-c9fd987f5c28" />
+
+2. En la pantalla principal, haga clic en el botón **Cargar Proyecto**.
+
+   <img width="1365" height="680" alt="image" src="https://github.com/user-attachments/assets/4f9b9611-f74d-4988-a134-b361282bc6ed" />
+
+    
 3. Seleccione el archivo del proyecto:
    ```
    C:\Main_ConsultaJudicial\robots\Preview v2.0\Robot.db
    ```
+   <img width="570" height="414" alt="image" src="https://github.com/user-attachments/assets/dc5cbec9-6a55-46f4-8223-30eb1a34dff7" />
+
+   Seleccionar el Robot orquestador
+
+   <img width="1355" height="593" alt="image" src="https://github.com/user-attachments/assets/c89effc3-9f91-49a1-a1dd-06669d519308" />
+
 4. Espere a que el bot cargue completamente en el Studio.
+  
 5. Haga clic en el botón **▶ Ejecutar** para iniciar el proceso.
+
+  <img width="1365" height="603" alt="image" src="https://github.com/user-attachments/assets/408fdb8c-3568-4c15-a01b-5ed8838e5ffa" />
 
 ### Paso 6 — Limpiar el ambiente (opcional)
 
@@ -321,23 +339,16 @@ La descarga del historial de actuaciones se gestiona con una **estrategia de esp
 
 | # | Funcionalidad | Detalle |
 |---|---------------|---------|
-| 1 | **Ejecución programada (Scheduled Trigger)** | El bot actualmente se ejecuta de forma manual desde Rocketbot Studio. No se configuró una tarea programada en el Programador de tareas de Windows para ejecuciones automáticas en horario de oficina (Lunes a Viernes, 8:00 a.m. - 5:00 p.m.). |
-| 2 | **Soporte para múltiples correos en la misma ejecución** | El flujo actual está optimizado para procesar un correo por ejecución. La lógica para iterar sobre múltiples correos no leídos en una sola pasada no quedó completamente validada en la versión estable. |
-| 3 | **Dashboard o reporte consolidado de métricas** | No se implementó un reporte visual (HTML o tabla en correo) con métricas de calidad mensual: volumen total procesado, % de tasa de éxito, AHT del bot vs. humano. Está definido en el PDD (Sección III.7) pero no se desarrolló en este alcance. |
-| 4 | **Contenerización con Docker** | No aplica directamente a Rocketbot Studio, pero podría haberse explorado para aislar dependencias del entorno en otro enfoque. |
-| 5 | **Movimiento de correos procesados a carpeta** | El PDD define que los correos con `BRE-01` (nombre inválido) deben moverse a una carpeta "No procesados" dentro de Gmail. Esta acción de carpeta no quedó completamente implementada. |
+| 1 | **Ejecución programada (Scheduled Trigger)** | El bot actualmente se ejecuta de forma manual Rocketbot no posee una accion nativa como un trigger que se dispare la ejecucion cuando llegue un correo, para este caso, toca realizar un webhook y configurarlo desde el orquestador de rocketbot, esa es una herramienta paga |
+| 2 | **Contenerización con Docker** | No aplica directamente a Rocketbot Studio |
 
 ### 5.2 Qué se mejoraría con más tiempo
 
 | # | Mejora | Justificación |
 |---|--------|---------------|
 | 1 | **Ejecución programada + trigger de correo en paralelo** | Configurar una tarea en el Programador de Windows que lance el bot cada N minutos en horario laboral, haciendo que el disparador sea verdaderamente desatendido sin intervención manual. |
-| 2 | **Logging estructurado con niveles configurables** | Estandarizar el formato del log como JSON o CSV con campos fijos (`timestamp`, `level`, `hu`, `correlationId`, `message`) para facilitar la integración con herramientas de monitoreo o dashboards. |
-| 3 | **Parametrización del intervalo de reintentos** | Actualmente los reintentos (máximo 3) están configurados como constante en el flujo. Moverlos a la tabla `Config` permitiría ajustar la resiliencia del bot sin modificar el código. |
-| 4 | **Validación de CAPTCHA con alerta temprana** | Implementar una detección proactiva de CAPTCHA antes de intentar la búsqueda, para reducir el tiempo perdido en reintentos cuando el portal gubernamental activa este mecanismo de seguridad. |
-| 5 | **Soporte multi-correo en una sola ejecución** | Refactorizar `HU01` y `HU02` para que iteren sobre todos los correos no leídos en la bandeja, procesando cada nombre como una transacción independiente dentro de la misma ejecución del bot. |
-| 6 | **Renombrado descriptivo del archivo descargado** | Agregar la lógica de renombrado del CSV descargado con el formato `detalle_proceso_{nombre}_{fecha}.csv` antes de guardarlo, siguiendo la convención definida en los criterios de aceptación del reto. |
-| 7 | **Pruebas unitarias por HU** | Crear casos de prueba documentados para cada Historia de Usuario que validen los escenarios de éxito, excepción de negocio y excepción de sistema por separado. |
+| 2 | **Tabla de gestion de ejecucion** | Crear tablas de gobierno y calidad de ejecucion, donde nos indique el porcentaje de efectividad, registros procesados, tiempo de ejecucion para facilitar la integración con herramientas de monitoreo o dashboards. |
+| 3 | **Ingresar mas datos de consulta, hay un problema que hay personas que cuentan con mas de 1000 registros, y la pagina no permite cargar toda esa cantidad de registros, por lo cual toca ser mas especifico |
 
 ---
 
