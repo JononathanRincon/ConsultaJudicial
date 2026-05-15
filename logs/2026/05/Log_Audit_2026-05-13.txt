@@ -1,0 +1,8 @@
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-13 23:10:29
+--------------------------------------------------------
+[2026-05-13 23:31:33] [INFO]: HU {strNombreHU} a Ejecutar
+[2026-05-13 23:38:15] [INFO]: La HU HU01_Recepcion_Solicitudes va a ejecutar
+[2026-05-13 23:47:48] [INFO]: ------- Inicio de la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-13 23:47:49] [INFO]: ------- Finalizo la ejecucion de HU02_DescargarDocumentos -------
+[2026-05-13 23:47:51] [INFO]: ------- Inicio de la ejecucion de HU02_DescargarDocumentos -------

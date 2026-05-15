@@ -1,0 +1,13 @@
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-14 11:12:56
+--------------------------------------------------------
+[2026-05-14 11:13:09] [INFO]: Inicializar las banderas de ejecucion de las HU
+[2026-05-14 11:13:11] [INFO]: HU HU01_Recepcion_Solicitudes a Ejecutar
+[2026-05-14 11:13:12] [ERROR]: Descripcion Error: ['message'] - sección Principal Main
+[2026-05-14 11:17:55] [INFO]: La HU HU01_Recepcion_Solicitudes va a ejecutar
+[2026-05-14 11:34:36] [INFO]: ------- Inicio de la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-14 11:34:38] [INFO]: ------- Finalizo la ejecucion de HU01_Recepcion_Solicitudes -------
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-14 19:30:32
+--------------------------------------------------------
+[2026-05-14 19:30:38] [INFO]: La HU HU02_Busqueda_RamaJudicial va a inicializar la Ejecucion
