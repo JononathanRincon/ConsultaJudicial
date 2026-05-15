@@ -1,0 +1,71 @@
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-15 01:05:53
+--------------------------------------------------------
+[2026-05-15 01:05:59] [INFO]: Inicializar las banderas de ejecucion de las HU
+[2026-05-15 01:06:00] [INFO]: La HU HU01_Recepcion_Solicitudes va a inicializar la Ejecucion
+[2026-05-15 01:06:01] [INFO]: ------- Inicio de la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-15 01:06:03] [INFO]: Se consulto el correo si tenia mensajes nuevos, y se identifico 1
+[2026-05-15 01:06:03] [INFO]: Se extrae los datos del correo y se guarda en la tabla transaccionar del Bot
+[2026-05-15 01:06:03] [INFO]: ------- Finalizo la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-15 01:06:07] [INFO]: ------- Inicio de la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-15 01:06:10] [INFO]: Se abrio la pagina web exitosamente
+[2026-05-15 01:06:15] [INFO]: Se selecciono la opcion de persona natural
+[2026-05-15 01:06:15] [INFO]: Se ingreso el nombre de la persona a realizar la consulta Juridica
+[2026-05-15 01:06:20] [INFO]: Se encontraron registros
+[2026-05-15 01:06:20] [INFO]: La consulta tiene mas de 6 registros, se puede consultar el 6 registro
+[2026-05-15 01:06:23] [INFO]: Se descargo el documento y se guardo en la carpeta del Bot
+[2026-05-15 01:06:23] [INFO]: Se actualizo el registro en la tabla transaccionar, añadiendo el Path Documento descargado y Radicado
+[2026-05-15 01:06:27] [INFO]: ------- Finalizo la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-15 01:06:30] [ERROR]: Descripcion Error: NameError: name 'false' is not defined - sección Principal Main
+[2026-05-15 01:06:30] [ERROR]: Descripcion Error: NameError: name 'false' is not defined - sección HU02 del Main
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-15 01:15:54
+--------------------------------------------------------
+[2026-05-15 01:16:00] [INFO]: La HU HU03_Notificacion_Cierre va a inicializar la Ejecucion
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-15 05:03:28
+--------------------------------------------------------
+[2026-05-15 05:03:37] [INFO]: La HU HU01_Recepcion_Solicitudes va a inicializar la Ejecucion
+[2026-05-15 05:03:39] [INFO]: ------- Inicio de la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-15 05:03:41] [INFO]: Se consulto el correo si tenia mensajes nuevos, y se identifico 1
+[2026-05-15 05:03:46] [INFO]: Se extrae los datos del correo y se guarda en la tabla transaccionar del Bot
+[2026-05-15 05:03:46] [INFO]: ------- Finalizo la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-15 05:03:50] [INFO]: ------- Inicio de la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-15 05:03:54] [INFO]: Se abrio la pagina web exitosamente
+[2026-05-15 05:03:59] [INFO]: Se selecciono la opcion de persona natural
+[2026-05-15 05:04:00] [INFO]: Se ingreso el nombre de la persona a realizar la consulta Juridica
+[2026-05-15 05:04:04] [INFO]: Se encontraron registros
+[2026-05-15 05:04:04] [INFO]: La consulta tiene mas de 6 registros, se puede consultar el 6 registro
+[2026-05-15 05:04:07] [INFO]: Se descargo el documento y se guardo en la carpeta del Bot
+[2026-05-15 05:04:07] [INFO]: Se actualizo el registro en la tabla transaccionar, añadiendo el Path Documento descargado y Radicado
+[2026-05-15 05:04:11] [INFO]: ------- Finalizo la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-15 05:06:39] [WARNING]: Intento 1 Ejecutando la HU03_Notificacion_Cierre
+[2026-05-15 05:12:04] [INFO]: ------- Inicio de la ejecucion de HU03_Notificacion_Cierre -------
+[2026-05-15 05:12:07] [ERROR]: Descripcion Error: SyntaxError: invalid syntax (<string>, line 1)
+[2026-05-15 05:12:08] [INFO]: ------- Finalizo la ejecucion de HU03_Notificacion_Cierre -------
+[2026-05-15 05:12:09] [WARNING]: Intento 1 Ejecutando la HU03_Notificacion_Cierre
+[2026-05-15 05:12:11] [INFO]: ------- Inicio de la ejecucion de HU03_Notificacion_Cierre -------
+[2026-05-15 05:12:11] [ERROR]: Descripcion Error: SyntaxError: invalid syntax (<string>, line 1)
+[2026-05-15 05:12:12] [INFO]: ------- Finalizo la ejecucion de HU03_Notificacion_Cierre -------
+[2026-05-15 05:12:13] [WARNING]: Intento 2 Ejecutando la HU03_Notificacion_Cierre
+[2026-05-15 05:12:15] [INFO]: ------- Inicio de la ejecucion de HU03_Notificacion_Cierre -------
+[2026-05-15 05:12:15] [ERROR]: Descripcion Error: SyntaxError: invalid syntax (<string>, line 1)
+[2026-05-15 05:12:16] [INFO]: ------- Finalizo la ejecucion de HU03_Notificacion_Cierre -------
+[2026-05-15 05:12:17] [WARNING]: Intento 3 Ejecutando la HU03_Notificacion_Cierre
+[2026-05-15 05:16:37] [ERROR]: Descripcion Error: SyntaxError: unterminated string literal (detected at line 1) (<string>, line 1)
+[2026-05-15 05:26:19] [ERROR]: Descripcion Error: NameError: name 'correlationId' is not defined
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-15 05:35:04
+--------------------------------------------------------
+[2026-05-15 05:35:15] [ERROR]: Descripcion Error: IndexError: list index out of range - sección Principal Main
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-15 05:39:10
+--------------------------------------------------------
+[2026-05-15 05:39:24] [ERROR]: Descripcion Error: IndexError: list index out of range - sección Principal Main
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-15 05:44:54
+--------------------------------------------------------
+[2026-05-15 05:48:52] [INFO]: La HU HU03_Notificacion_Cierre va a inicializar la Ejecucion
+[2026-05-15 05:49:12] [INFO]: ------- Inicio de la ejecucion de HU03_Notificacion_Cierre -------
+[2026-05-15 05:49:19] [INFO]: ------- Finalizo la ejecucion de HU03_Notificacion_Cierre -------
+[2026-05-15 05:49:23] [ERROR]: Descripcion Error: IndexError: list index out of range - sección HU02 del Main

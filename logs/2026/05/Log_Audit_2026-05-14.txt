@@ -11,3 +11,80 @@ Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-14 11:12:56
 Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-14 19:30:32
 --------------------------------------------------------
 [2026-05-14 19:30:38] [INFO]: La HU HU02_Busqueda_RamaJudicial va a inicializar la Ejecucion
+[2026-05-14 20:09:20] [INFO]: ------- Inicio de la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-14 20:09:23] [INFO]: Se abrio la pagina web exitosamente
+[2026-05-14 20:09:26] [INFO]: Se selecciono la opcion de persona natural
+[2026-05-14 20:09:26] [INFO]: Se ingreso el nombre de la persona a realizar la consulta Juridica
+[2026-05-14 20:09:51] [INFO]: ------- Finalizo la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-14 20:09:53] [ERROR]: Descripcion Error: module  {"module_name":"modulestoolsfcv","module":"ModulesLogs","cbxLogActionType":"MensageTrace","cbxNivelLog":"Info","PathLog":"{strPathLogs}","txtNameBot":"{strNombreBot}","txtMensajeLog":"La HU {strNombreHU} va a ejecutar"} - sección HU01 del Main
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-14 21:27:02
+--------------------------------------------------------
+[2026-05-14 21:27:22] [INFO]: La HU HU02_Busqueda_RamaJudicial va a inicializar la Ejecucion
+[2026-05-14 21:28:09] [INFO]: ------- Inicio de la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-14 21:28:13] [INFO]: Se abrio la pagina web exitosamente
+[2026-05-14 21:28:16] [INFO]: Se selecciono la opcion de persona natural
+[2026-05-14 21:28:16] [INFO]: Se ingreso el nombre de la persona a realizar la consulta Juridica
+[2026-05-14 21:28:26] [INFO]: ------- Finalizo la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-14 22:13:15] [INFO]: ------- Inicio de la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-14 22:14:00] [INFO]: Se abrio la pagina web exitosamente
+[2026-05-14 22:14:03] [INFO]: Se selecciono la opcion de persona natural
+[2026-05-14 22:14:03] [INFO]: Se ingreso el nombre de la persona a realizar la consulta Juridica
+[2026-05-14 22:14:20] [ERROR]: Descripcion Error: BusinessError: No carga Información, se debe ser mas especifico en la consulta
+[2026-05-14 22:14:23] [INFO]: ------- Finalizo la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-14 22:14:24] [WARNING]: Intento 1 Ejecutando la HU02_Busqueda_RamaJudicial
+[2026-05-14 22:14:25] [ERROR]: Descripcion Error: BusinessError: No carga Información, se debe ser mas especifico en la consulta - sección HU01 del Main
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-14 22:18:23
+--------------------------------------------------------
+[2026-05-14 22:18:44] [INFO]: La HU HU01_Recepcion_Solicitudes va a inicializar la Ejecucion
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-14 22:20:28
+--------------------------------------------------------
+[2026-05-14 22:20:40] [INFO]: La HU HU01_Recepcion_Solicitudes va a inicializar la Ejecucion
+[2026-05-14 22:21:18] [INFO]: ------- Inicio de la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-14 22:21:23] [INFO]: Se consulto el correo si tenia mensajes nuevos, y se identifico 1
+[2026-05-14 22:21:27] [INFO]: Se extrae los datos del correo y se guarda en la tabla transaccionar del Bot
+[2026-05-14 22:21:27] [INFO]: ------- Finalizo la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-14 22:21:28] [WARNING]: Intento 2 Ejecutando la HU01_Recepcion_Solicitudes
+[2026-05-14 22:21:30] [INFO]: ------- Inicio de la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-14 22:21:34] [INFO]: Se consulto el correo si tenia mensajes nuevos, y se identifico 0
+[2026-05-14 22:21:35] [INFO]: ------- Finalizo la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-14 22:21:36] [WARNING]: Intento 3 Ejecutando la HU01_Recepcion_Solicitudes
+[2026-05-14 22:21:38] [INFO]: ------- Inicio de la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-14 22:21:42] [INFO]: Se consulto el correo si tenia mensajes nuevos, y se identifico 0
+[2026-05-14 22:21:42] [INFO]: ------- Finalizo la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-14 22:21:43] [WARNING]: Intento 4 Ejecutando la HU01_Recepcion_Solicitudes
+[2026-05-14 22:21:45] [WARNING]: Descripcion Error: Se realizaron todos los 4 intentos para que ejecute HU01_Recepcion_Solicitudes Fallo por
+[2026-05-14 22:26:40] [INFO]: ------- Inicio de la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-14 22:26:48] [INFO]: Se abrio la pagina web exitosamente
+[2026-05-14 22:26:53] [INFO]: Se selecciono la opcion de persona natural
+[2026-05-14 22:26:53] [INFO]: Se ingreso el nombre de la persona a realizar la consulta Juridica
+[2026-05-14 22:27:14] [ERROR]: Descripcion Error: BusinessError: No carga Información, se debe ser mas especifico en la consulta
+[2026-05-14 22:27:17] [INFO]: ------- Finalizo la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-14 22:27:17] [WARNING]: Intento 1 Ejecutando la HU02_Busqueda_RamaJudicial
+[2026-05-14 22:31:55] [WARNING]: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028CD212B5B0>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/4bdff80ce9e163a326bd55b4e9227a2f
+[2026-05-14 22:31:59] [WARNING]: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028CC3FC4760>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/4bdff80ce9e163a326bd55b4e9227a2f
+[2026-05-14 22:32:03] [WARNING]: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028CC3FC7100>: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/4bdff80ce9e163a326bd55b4e9227a2f
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-14 22:36:53
+--------------------------------------------------------
+[2026-05-14 22:37:05] [INFO]: La HU HU02_Busqueda_RamaJudicial va a inicializar la Ejecucion
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-14 22:38:36
+--------------------------------------------------------
+--------------------------------------------------------
+Inicio Ejecucion del Bot Main_ConsultaJudicial 2026-05-14 22:40:17
+--------------------------------------------------------
+[2026-05-14 22:40:29] [INFO]: La HU HU01_Recepcion_Solicitudes va a inicializar la Ejecucion
+[2026-05-14 22:40:31] [INFO]: ------- Inicio de la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-14 22:40:34] [INFO]: Se consulto el correo si tenia mensajes nuevos, y se identifico 1
+[2026-05-14 22:40:35] [INFO]: Se extrae los datos del correo y se guarda en la tabla transaccionar del Bot
+[2026-05-14 22:40:35] [INFO]: ------- Finalizo la ejecucion de HU01_Recepcion_Solicitudes -------
+[2026-05-14 22:40:39] [INFO]: ------- Inicio de la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-14 22:40:42] [INFO]: Se abrio la pagina web exitosamente
+[2026-05-14 22:40:43] [INFO]: Se selecciono la opcion de persona natural
+[2026-05-14 22:40:43] [INFO]: Se ingreso el nombre de la persona a realizar la consulta Juridica
+[2026-05-14 22:40:54] [ERROR]: Descripcion Error: BusinessError: No carga Información, se debe ser mas especifico en la consulta
+[2026-05-14 22:40:56] [INFO]: ------- Finalizo la ejecucion de HU02_Busqueda_RamaJudicial -------
+[2026-05-14 22:40:57] [WARNING]: Intento 1 Ejecutando la HU02_Busqueda_RamaJudicial
